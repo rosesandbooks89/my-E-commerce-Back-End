@@ -34,7 +34,6 @@ res.status(500).json(err);
 }
 });
 
-
 router.post('/', async (req, res) => {
   // TODO create a new category
   try {
@@ -45,7 +44,6 @@ router.post('/', async (req, res) => {
     }
 });
 
-// TODO update a category by its `id` value
 router.put('/:id', (req, res) => {
   Category.update(req.body, {
     where: { id: req.params.id },
@@ -63,23 +61,23 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
-  // TODO delete a category by its `id` value
-  
-    Category.destroy({
-      where: { id: req.params.id },
+router.delete("/:id", (req, res) => {
+  Category.destroy({
+    where: { id: req.params.id },
+  })
+    .then((deletedCategory) => {
+      if (!deletedCategory) {
+        res
+          .status(404)
+          .json({ message: "There is no category with that id. Try again." });
+        return;
+      }
+      res.json({ message: "Category deleted successfully." });
     })
-      .then((deletedCategory) => {
-        if (!deletedCategory) {
-          res.status(404).json({ message: 'There is no category with that id. No category deleted' });
-          return;
-        }
-        res.json({ message: 'Category deleted successfully.' });
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
 module.exports = router;

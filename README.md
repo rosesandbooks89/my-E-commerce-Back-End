@@ -40,7 +40,7 @@ THEN I am able to successfully create, update, and delete data in my database
 2. Open the command line, navigate to the root directory of this repository, and run `npm install` to install the necessary dependencies.
 3. Create a `.env` file in the root directory of this repository. Inside the `.env` file, add the following code and replace the values with your MySQL username and password:
 ```
-DB_USER='your MySQL username'
+DB_USER='your MySQL username' (usually 'root')
 DB_PW='your MySQL password'
 ```
 4. Open the command line, navigate to the root directory of this repository, and run `mysql -u root -p` to open the MySQL shell.
@@ -51,7 +51,8 @@ DB_PW='your MySQL password'
 
 ## Usage
 1. Open Insomnia Core.
-2. Test the API GET routes for categories, products, and tags by navigating to `http://localhost:3001/api/categories`, `http://localhost:3001/api/products`, and `http://localhost:3001/api/tags`, respectively.
+2. Test the API GET routes for categories, products, and tags by navigating to 
+`http://localhost:3001/api/categories`, `http://localhost:3001/api/products`, and `http://localhost:3001/api/tags`, respectively.
 3. Test the API POST, PUT, and DELETE routes for categories, products, and tags by navigating to `http://localhost:3001/api/categories`, `http://localhost:3001/api/products`, and `http://localhost:3001/api/tags`, respectively, and selecting the appropriate request type from the dropdown menu.
 
 ## License
@@ -60,10 +61,11 @@ This project currently does not have any licenses.
 ##
 
 ## Struggles and Sources
+Using week 13 activities as a guide, I was able to complete this project. Thankfully most of the code was provided in the sample code. 
 During this project, I struggled with the following issues:
-* I had trouble with the `PUT` routes for categories, products, and tags. I was able to get the `PUT` route for categories to work, but I was not able to get the `PUT` routes for products and tags to work. I tried to troubleshoot the issue by comparing my code to the code in the [module 13 activities](
+I had a hard time getting insomnia to work. I was able to get it to work after my tutor did a walk through with me and have a better understanding of how to use it.
 
-
+I used the following sources for help:
 * [Sequelize Documentation](https://sequelize.org/master/)
 * [Express.js Documentation](https://expressjs.com/)
 * [MySQL Documentation](https://dev.mysql.com/doc/)
@@ -73,12 +75,16 @@ During this project, I struggled with the following issues:
 * [W3Schools](https://www.w3schools.com/)
 * [Node.js Documentation](https://nodejs.org/en/docs/)
 * [npm Documentation](https://docs.npmjs.com/)
-* [Shields.io](https://shields.io/)
-* [MySQL Workbench Documentation](https://dev.mysql.com/doc/workbench/en/)
-* [MySQL Tutorial](https://www.mysqltutorial.org/)
-* [MySQL Tutorial: How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
-* [MySQL Tutorial: How To Import and Export Databases and Reset a Root Password in MySQL](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql)
-* [MySQL Tutorial: How To Install MySQL on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
-* [MySQL Tutorial: How To Use MySQL Views to Simplify Complex Queries](https://www.digitalocean.com/community/tutorials/how-to-use-mysql-views-to-simplify-complex-queries)
-* [MySQL Tutorial: How To Use MySQL Workbench to Create a Database](https://www.digitalocean.com/community/tutorials/how-to-use-mysql-workbench-to-create-a-database)
-* [MySQL Tutorial: How To Write Comments in SQL](https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-sql)
+## Link to Recordings
+
+[Link to video recording](https://drive.google.com/file/d/19UztVgYl4uH2ZAClOpgFYPi-NYWXrcCE/view)
+
+
+## Questions
+If you have any questions, please contact me at the email below. Check out my Github portfolio for more of my projects!
+
+Here is a link to my [GitHub Repo](https://github.com/rosesandbooks89).
+
+If you have any questions please email me at: rosesandbooks89@gmail.com.
+
+©rosesandbooks89
